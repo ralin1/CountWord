@@ -2,9 +2,19 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>So, {{count}}</title>
   </head>
   <body>
-    <h1>Count</h1>
+    <h1>There are {{count}} words in your text</h1>
+    <br>
+    <h1>Original:</h1>
+    {{fulltext}}
+    <h1>Word count:</h1>
+      {% for word, counttotal in sortedwords %}
+      {{word}}
+      <br>
+      {{counttotal}}
+      <br>
+      {% endfor %}
   </body>
 </html>
