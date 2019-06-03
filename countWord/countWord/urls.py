@@ -18,5 +18,5 @@ from countWord import pages
 
 urlpatterns = [
     path('', pages.homepage),
-    path('words/', pages.words),
+    path('count/', pages.count, name='count'),
 ]
