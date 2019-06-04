@@ -5,13 +5,14 @@
     <title>Hello world</title>
   </head>
   <body>
+    <h1>Hello</h1>
     <p1>Enter text: </p1>
     <form class="" action="{% url 'count' %}">
       <textarea name="fulltext" rows="5" cols="40"></textarea>
       <br>
       <input type="submit" value="Count!"/>
     </form>
-
+    <a href="{% url 'about' %}">About</a>
 
   </body>
 </html>

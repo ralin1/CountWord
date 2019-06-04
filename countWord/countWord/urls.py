@@ -17,6 +17,7 @@ from django.urls import path
 from countWord import pages
 
 urlpatterns = [
-    path('', pages.homepage),
+    path('', pages.homepage, name='home'),
     path('count/', pages.count, name='count'),
+    path('about/', pages.about, name='about'),
 ]
